@@ -8,4 +8,5 @@ machine:
 
 test:
   override:
-    - set -o pipefail && xcodebuild -workspace xctool.xcworkspace -scheme xctool build test -verbose -enableCodeCoverage YES | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --utf
+    - set -o pipefail && xcodebuild -workspace xctool.xcworkspace -scheme xctool clean build -verbose | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --utf
+
