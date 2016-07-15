@@ -4,7 +4,8 @@ general:
 machine:
   xcode:
     version: 7.3.1
-
+  environment:
+    XCODE_SCHEME: xctool
 
 test:
   override:
