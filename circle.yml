@@ -8,5 +8,4 @@ machine:
 
 test:
   override:
-    - pwd
-    - bash ./scritps/travis-ci.sh
+    - set -o pipefail && xcodebuild -workspace xctool.xcworkspace -scheme xctool build test -verbose -enableCodeCoverage YES | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --utf
