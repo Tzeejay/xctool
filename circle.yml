@@ -1,5 +1,5 @@
 general:
-  build_dir: xctool
+  build_dir: /home/distiller/xctool
 
 machine:
   xcode:
