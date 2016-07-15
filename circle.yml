@@ -9,4 +9,5 @@ machine:
 
 test:
   override:
+    - pwd
     - bash ./scritps/travis-ci.sh
