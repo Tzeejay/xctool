@@ -1,3 +1,6 @@
+general:
+  build_dir: xctool
+
 machine:
   xcode:
     version: 7.3.1
