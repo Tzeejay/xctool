@@ -8,7 +8,7 @@ machine:
 
 test:
   override:
-    - sh build.sh
+    - sh launch-simulator.sh
     - sleep 15
     - set -o pipefail && xcodebuild -workspace xctool.xcworkspace -scheme xctool clean build test -verbose -enableCodeCoverage YES | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --utf
 
