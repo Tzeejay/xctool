@@ -8,7 +8,7 @@ machine:
 
 test:
   override:
-    - xcrun instruments -w "6EE17357-0132-44C8-90FB-3F316A5177D4"
+    - xcrun instruments -w "8538CCCC-80FB-4B6B-9281-222771C38FEB"
     - sleep 15
     - set -o pipefail && xcodebuild -workspace xctool.xcworkspace -scheme xctool clean build test -verbose -enableCodeCoverage YES | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --utf
 
